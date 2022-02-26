@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>The Ragas 🎹</title>
+
+	<meta name="viewport" content="width=device-width" />
+	<meta name="description" content="Music website coded in HTML, CSS, and JQuery" />
+	<meta name="keywords" content="msuic, website, template, responsive" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="icon" type="image/png" href="http://waldronmatthew.com/favicon.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" type="text/css" title="style" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<!-- scoll-fix resolves Firefox anchor location bug -->
+	<!-- When clicking a navigation option from a different page it does not accurately go to the intended id tag area. -->
+	<!-- This script reloads the page to force the anchor into the right location -->
+	<script>
+		function now() {
+			window.location.reload(true);
+		}
+	</script>
+	
+</head>
+
+<body>
+
+	<header>
+		<div id="logo">
+			<h1><a href="index.html">The Ragas</a></h1>
+			<h2><a href="index.html">Soothing. Divine. Romantic.</a></h2>
+		</div>
+	</header>
+
+	<nav class="container">
+		<ul class="clearfix" id="cfix">
+			<li class="icon" id="icon">
+				<a href="javascript:void(0);" onclick="myMenu()">&#9776; Menu</a>
+			</li>
+			<li>
+				<ul class="scroll" id="scroll">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+
+
+					<li><a href="#music">Music</a></li>
+
+
+					<li><a href="#videos">Videos</a></li>
+
+					<!-- <li><a href="#photos">Photos</a></li>
+					<li><a href="#contact">Contact</a></li> -->
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	<section id="home">
+		<hr class="horizontal" />
+		<div class="hero">
+			<div id="overlay">
+				<div class="hero-text">
+
+					<br><br><br><br><br><br><br>
+
+					<div class="pagesbar-music">
+						<ul class="pages-music">
+							<li><a href="index.html#videos">Click Here to Watch</a></li>
+						</ul>
+					</div>
+
+					<div id="go-btm"><a href="#about" class="go-btm">&#9660;</a></div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<div class="site_content_index">
+
+		<div id="content">
+			<div class="anchor-box">
+				<hr class="horizontal" />
+				<section id="about">
+					<h3 class="anchor">About</h3>
+				</section>
+				<hr class="horizontal" />
+			</div>
+
+			<ul class="social_media_music">
+				<li><a href="https://www.facebook.com/rishabhvyas2001">
+						<img src="pictures/icons/facebook_b.png" alt="Facebook" /></a></li>
+
+				<li><a href="https://www.youtube.com/channel/UCWCTDh43oNaMoPoqB9UHOzw">
+						<img src="pictures/icons/youtube_b.png" alt="YouTube" /></a></li>
+
+				<li><a href="index.html">
+						<img src="pictures/icons/instagram_b.png" alt="Instagram" /></a></li>
+
+
+
+
+
+			</ul>
+
+			<!-- <p>Nam a luctus sem. Cras imperdiet mi arcu. Fusce aliquet nulla sed nulla maximus tempus. Sed ac nisl mi.
+				Nulla facilisi.
+				Mauris iaculis ex nec lacus tincidunt, a vulputate purus fringilla. Duis maximus ligula auctor leo
+				ullamcorper varius.
+				Duis lacinia nibh a dui euismod pretium.
+			</p> -->
+
+			<!-- <div class="pagesbar">
+				<ul class="pages">
+					<li><a href="javascript:void(0);" onclick="hideText()">Read Bio</a></li>
+					<li class="hide" id="about-text">
+					 <p>Nunc sagittis mauris nec orci sagittis, vitae dictum libero pellentesque. Proin lorem nisi,
+							tristique at massa id,
+							mattis condimentum lectus. Proin viverra magna ut suscipit congue. Integer posuere enim dui,
+							vel ullamcorper ligula euismod in.
+							Aenean vulputate imperdiet bibendum. Sed non erat eu ipsum convallis maximus. Sed ipsum
+							arcu, viverra vel ipsum egestas,
+							venenatis aliquet nisi.
+						</p> 
+
+						<div id="read-bio">
+							 <p>Fusce commodo malesuada ipsum non volutpat. Nulla quis ullamcorper leo, nec tristique
+								lorem. In dapibus hendrerit molestie.
+								Sed dictum dictum vehicula. Quisque a elit justo. Morbi id nisl sed dui dignissim semper
+								et et tellus.
+								In egestas a urna sit amet elementum.
+							</p> 
+						</div>
+					</li>
+				</ul>
+			</div> -->
+
+
+
+			<ul class="grid">
+				<li class="grid_item span j"><a href="index.html" class="grid_link">
+						<div class="tile">Melodica Covers</div>
+					</a></li>
+				<li class="grid_item span k"><a href="index.html" class="grid_link">
+						<div class="tile">Guitar Covers</div>
+					</a></li>
+				<li class="grid_item span l"><a href="index.html" class="grid_link">
+						<div class="tile">Flute Covers</div>
+					</a></li>
+			</ul>
+
+
+			<div id="myModal" class="modal">
+
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<div class="center">
+						<p>Thanks for joining our mailing list!</p>
+						<p><a href="https://docs.google.com/spreadsheets/d/1lqfvMxZgZgZkYTMEHQfcmEHSunweDe9XukE-aVWE2PY/edit?usp=sharing"
+								target="blank">Click here</a> to view the email address you entered.</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="myError" class="modal">
+
+				<div class="modal-content">
+					<span class="close_error">&times;</span>
+					<div class="center">
+						<p>Invalid email address. Please try again.</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="anchor-box">
+				<hr class="horizontal">
+				<section id="music">
+					<h3 class="anchor">Music</h3>
+				</section>
+				<hr class="horizontal">
+			</div>
+
+			<div class="music-hero">
+				<div id="music-overlay">
+					<div class="hero-text">
+
+						<!-- <h2>Kaleidoscope Memories</h2> -->
+						<div class="pagesbar-music">
+							<ul class="pages-music">
+								<li><a href="#music">My Music Library </a></li>
+								<div id="go-btm"><a href="#music" class="go-btm">&#9660;</a></div>
+							</ul>
+						</div>
+
+
+						<!-- <ul class="social_media_music">
+
+							<li><a href="index.html">
+									<img src="pictures/icons/itunes.png" alt="iTunes" /></a></li>
+
+							<li><a href="index.html">
+									<img src="pictures/icons/spotify.png" alt="Spotify" /></a></li>
+
+							<li><a href="index.html">
+									<img src="pictures/icons/play.png" alt="Google Play" /></a></li>
+
+							<li><a href="index.html">
+									<img src="pictures/icons/amazon.png" alt="Amazon" /></a></li>
+
+						</ul> -->
+
+					</div>
+				</div>
+			</div>
+
+			<div id="audio-players"></div>
+
+
+
+			<div class="anchor-box">
+				<hr class="horizontal" />
+				<section id="videos">
+					<h3 class="anchor">Videos</h3>
+				</section>
+				<hr class="horizontal" />
+			</div>
+			<div class="row" style="width: 100%;">
+				<div class="col">
+					<div class="flexbox-video">
+						<div class="video" style="width: 100%;">
+							<h4 class="center">Chura Liya Hai Melodica Cover 🎹</h4>
+							<div class="youtube-player" data-id="WupVyUUJIQ0"></div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col">
+					<div class="flexbox-video" >
+						<div class="video" style="width: 100%;">
+							<h4 class="center">Hey Ram Hey Ram Flute Cover 🎹</h4>
+							<div class="youtube-player" data-id="awRTbWSg1FM"></div>
+						</div>
+					</div>
+
+				</div>
+
+			
+
+
+				</div>
+				
+			
+
+
+			<!-- <div class="anchor-box">
+				<hr class="horizontal" />
+				<section id="photos">
+					<h3 class="anchor">Photos</h3>
+				</section>
+				<hr class="horizontal" />
+			</div> -->
+
+			<!-- <ul class="grid">
+				<li class="grid_item span a"><a href="pictures/gallery/light-show.jpg" class="grid_link"
+						data-lightbox="pics" data-title="Light show"></a></li>
+				<li class="grid_item span b"><a href="pictures/gallery/logo.png" class="grid_link" data-lightbox="pics"
+						data-title="Playing synth"></a></li>
+				<li class="grid_item span c"><a href="pictures/gallery/singing.jpg" class="grid_link"
+						data-lightbox="pics" data-title="Singing"></a></li>
+				<li class="grid_item span d"><a href="pictures/gallery/guitar.jpg" class="grid_link"
+						data-lightbox="pics" data-title="Playing guitar"></a></li>
+				<li class="grid_item span e"><a href="pictures/gallery/bass.jpg" class="grid_link" data-lightbox="pics"
+						data-title="Playing bass"></a></li>
+				<li class="grid_item span f"><a href="pictures/gallery/concert.jpg" class="grid_link"
+						data-lightbox="pics" data-title="Concert in CA"></a></li>
+			</ul> -->
+
+		
+
+
+		</div>
+	</div>
+
+	<footer>
+		<ul id="social_media">
+			<li><a href="index.html">
+					<img src="pictures/icons/facebook.png" alt="Facebook" /></a></li>
+
+			<!-- <li><a href="index.html">
+					<img src="pictures/icons/instagram.png" alt="Instagram" /></a></li> -->
+
+			<li><a href="index.html">
+					<img src="pictures/icons/youtube.png" alt="YouTube" /></a></li>
+
+			<!-- <li><a href="index.html">
+					<img src="pictures/icons/twitter.png" alt="Twitter" /></a></li>
+
+			<li><a href="index.html">
+					<img src="pictures/icons/itunes.png" alt="iTunes" /></a></li> -->
+
+			<li><a href="index.html">
+					<img src="pictures/icons/spotify.png" alt="Spotify" /></a></li>
+<!-- 
+			<li><a href="index.html">
+					<img src="pictures/icons/amazon.png" alt="Amazon" /></a></li> -->
+
+			<!-- <li><a href="index.html">
+					<img src="pictures/icons/play.png" alt="Google Play" /></a></li> -->
+<!-- 
+			<li><a href="index.html">
+					<img src="pictures/icons/shop.png" alt="Store" /></a></li> -->
+
+			<!-- <li><a href="index.html#mail">
+					<img src="pictures/icons/mail.png" alt="Subscribe" /></a></li> -->
+		</ul>
+
+		<ul id="btmtext">
+			<li>
+				<h6>Copyright &copy; 2023 The Ragas . All Rights Reserved.</h6>
+			</li>
+			<li>
+				<h6>Stay Tuned, Enjoy and Connected with Us ❤️</h6>
+			</li>
+		</ul>
+	</footer>
+
+	<script src="js/mailingList.js"></script>
+	<script src="js/contact.js"></script>
+	<script src="js/jquery.serialize-object.js"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/fixedNavMenu.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/musPlayer.js"></script>
+	<script src="js/vid.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+		integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+		integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/lightbox.css" type="text/css" title="style">
+</body>
+
+</html>
